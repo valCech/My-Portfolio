@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root /*variables*/
+{
+    --white-color: #f5f5f5; /*rgb (255, 255, 255)*/
+    --black-color: #000;
+    --neon-pink: #ff00ff;
+    --neon-red: #f50057;
+    --neon-blue: #00ffff;
+    --light-gray: #909096;
+    --dark-gray: #1d1d1d; /*rgb (29, 29, 29)*/
+    --deep-black: #181818;
+    --deep-deep-black:#191919;
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: 'La Belle Aurore', cursive;
+}
+h1 span{
+  font-size: 5rem;
+}
+h1 :nth-child(2){
+  font-size: 5rem;
+}
+#web_dev{font-size: 5rem
+}
+body{
+    font-family: sans-serif;
+    color: var(--white-color);
+    background: var(--dark-gray);
+}
+header{
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+#sound{
+    padding: 0.43em;
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+}
+.sound-cloud{
+    font-size: 1.2rem;
+    margin: 0.43em;
+    color: var(--neon-red);
+}
+.on-off {
+  cursor: pointer;
+  margin-left: 0.3em;
+}
+#on {
+  display: none;
+  color: var(--neon-blue);
+}
+#off {
+  color: var(--neon-red);
+}
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: var(--light-gray);
+  font-size: 15px;
+  font-family: 'Orbitron';
+  letter-spacing: 7px;
+  text-shadow: 0 0 10px var(--light-gray);
+}
+.btns_container .fa-solid{
+  font-size: 2rem;
+  padding: 10px;
+  background-color: var(--deep-black);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.btns_container .fa-solid:nth-child(2){
+  display: none;
+}
+.btns_container .fa-solid:hover {
+  color: var(--neon-pink);
+}
+
+/* ____________________________ASIDE SECTION (NAV BAR) STARTS HERE__________________________________________*/
+.aside{
+  width: 13rem;
+  height: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--deep-black);
+          /*______overflow_______*/
+  overflow: hidden;
+  z-index: 3;
+}
+.show_nav{
+  height: 100%;
+  overflow: visible;
+} 
+.aside_wrapper{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.logo_section{
+  min-height: 32vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.logo{
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+.logo img{
+  height: auto;
+}
+.logo span{               
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: var(--white-color);
+  font-weight: 900;
+  text-shadow: 0px 3px 6px var(--neon-pink), 5px 2px 0px var(--neon-blue);
+}
+
+#name_v {
+  color: var(--neon-blue)
+}
+#name_l {
+  color: var(--neon-pink)
+}
+.logo_section > span{
+  margin-top: 1.6em;
+  font-size: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* ____________________________NAV SECTION STARTS HERE__________________________________________*/
+
+.nav_links a{
+  display: block;
+  text-align: center;
+  line-height: 3em;
+  text-decoration: none;
+  color: var(--neon-blue);
+  
+}
+
+.nav_links a::before {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left:0;
+  background-color: var(--light-gray);
+}
+
+.nav_links a:hover{
+  color: var(--neon-pink);
+}
+.nav_links a.active{
+  color: var(--neon-pink);
+}
+
+/* ____________________________SOCIAL ICONS__________________________________________*/
+.social_icons{
+  display: flex;
+  list-style: none;
+  margin-bottom: 1.8em;
+}
+.social_icons li{
+  width: 2em;
+  font-size: 1rem;
+}
+.social_icons li a{
+  text-decoration: none;
+  color: var(--neon-blue);
+}
+
+.social_icons li a:hover{
+  color: var(--neon-pink);
+}
+/*-----------------NAV BAR ENDS HERE-----------------*/
+#section_home{
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+  padding-left: 1.5em;
+}
+.text_zone h1{
+  font-size: 3.5rem;
+  line-height: 20pxrem;
+  letter-spacing: -3px;
+}
+#a_name_letter{
+  color: var(--neon-blue);
+  margin-left: -26px;
+}
+#l_name_letter{
+  margin-left: -12px;
+  color: var(--neon-pink); 
+}
+.text_zone img{
+  width: 70px; 
+  height: 70px;
+  
+}
+.text_zone .gray_text{
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 3px;
+  margin-top: 1em;
+  color: var(--light-gray);
+}
+/*-----------------CONTACT BUTTON-----------------*/
+.contact_button{
+  margin-top: 3.12em 0;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  line-height: 40px;
+  position: relative;
+}
+.contact_button div{
+  position: relative;
+  margin-top: 2.2em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+}
+.contact_button span.bg{ /*creates animation part 1*/
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: -5px;
+  top: 0;
+  transition: all .3s ease-in-out;
+  transform: skewX(-18deg);
+  background-color: var(--neon-blue);
+}
+.contact_button:hover span.bg{ /*creates animation part 2*/
+  width: 110%;
+}
+.contact_button span.base{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border: 1px solid var(--neon-blue);
+  box-sizing: border-box;
+}
+.contact_button span.text{
+  position: relative;
+  color: var(--neon-blue);
+  font-size: 1.2rem;
+  letter-spacing: 3px; 
+}
+.contact_button:hover span.text{
+  color: #1d1d1d;
+}
+.scroll_down{
+  display: block;
+  font-size: .9em;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 3.3em;
+  right: 2em;
+  transform: rotate(90deg);
+  padding: 0.5em 1em;
+
+}
+.scroll_down_right{
+  left: 2em;
+  right: auto;
+}
+.scroll_down i{
+  transform: rotate(270deg);
+  margin-left: .9em;
+}
+.scroll_down span{
+  display: inline-block; /*to make the animation work*/
+  animation: scroll .5s linear infinite alternate-reverse;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(-7px);
+  }
+  100%{
+    transform: translateX(7px);
+  }
+}
