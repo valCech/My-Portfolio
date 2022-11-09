@@ -134,14 +134,15 @@ header{
   text-decoration: none;
 }
 .logo img{
-  height: auto;
+  height: 100px;
+  width: 100px;
 }
-.logo span{               
+.logo > span{               
   margin-top: 0;
   font-size: 2.5rem;
   color: var(--white-color);
   font-weight: 900;
-  text-shadow: 0px 3px 6px var(--neon-pink), 5px 2px 0px var(--neon-blue);
+  
 }
 
 #name_v {
@@ -208,23 +209,23 @@ header{
   align-items: center;
   padding-left: 1.5em;
 }
+#heading{
+  font-size: 6rem;
+  line-height: 20px;
+  letter-spacing: -3px;
+  color: var(--white-color);
+  margin-bottom: 0.5em;
+}
 .text_zone h1{
-  font-size: 3.5rem;
-  line-height: 20pxrem;
+  font-size: 4rem;
+  line-height: 20px;
   letter-spacing: -3px;
 }
-#a_name_letter{
-  color: var(--neon-blue);
-  margin-left: -26px;
-}
-#l_name_letter{
-  margin-left: -12px;
-  color: var(--neon-pink); 
-}
+
 .text_zone img{
   width: 70px; 
   height: 70px;
-  
+  margin-right: -0.11em;
 }
 .text_zone .gray_text{
   font-size: 1rem;
@@ -235,7 +236,7 @@ header{
 }
 /*-----------------CONTACT BUTTON-----------------*/
 .contact_button{
-  margin-top: 3.12em 0;
+  margin-top: 3.12em;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -312,5 +313,121 @@ header{
   }
   100%{
     transform: translateX(7px);
+  }
+}
+
+/*-----------------MEDIA SECTION 4 BIGGER SCREEN-----------------*/
+@media screen and (min-width: 950px) {
+  header{
+    justify-content: flex-end;
+  }
+  .btns_container{
+    display: none;
+  }
+  .aside{
+    min-width: 10%;
+    height:100%;      
+  }
+  /*-- HOME SECTION --*/
+  #section_home{
+    padding-left: 20em;
+  }
+  #heading{
+    font-size: 4rem;
+  }
+  #logo_size{
+    margin-right: -0.8rem;
+  }
+  .text_zone h1{
+    font-size: 4rem;
+    line-height: 85px;
+    letter-spacing: -3px;
+  }
+  
+  .scroll_down_right{
+    left: 15em;
+    right: auto;
+  }
+}
+
+@media screen and (min-width: 741px) and (max-width: 949px){
+  #heading{
+    font-size: 3rem;
+    line-height: 20px;
+    letter-spacing: -2px;
+    color: var(--white-color);
+    margin-bottom: 0.5em;
+  }
+  .text_zone h1{
+    font-size: 3rem;
+    line-height: 50px;
+    
+  }
+  .text_zone img{
+    width: 35px; 
+    height: 35px;
+    margin-right: -0.11em;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 740px){
+  .clock{
+    font-size: 10px;
+    display: flex;
+    margin: 0 3em;
+  }
+  #section_home{
+    display:flex;
+    align-items: center;
+    padding-left: 1.5em;
+  }
+  #heading{
+    font-size: 3rem;
+    line-height: 20px;
+    letter-spacing: -2px;
+    color: var(--white-color);
+    margin-bottom: 0.5em;
+  }
+  .text_zone h1{
+    font-size: 3rem;
+    line-height: 45px;
+    letter-spacing: -3px;
+  }
+  .text_zone img{
+    width: 35px; 
+    height: 35px;
+    margin-right: -0.11em;
+  }
+}
+@media screen and (max-width: 320px){
+  .clock{
+    font-size: 10px;
+    display: flex;
+    margin: 0 4em;
+  }
+  #heading{
+    font-size: 3rem;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: var(--white-color);
+    margin-bottom: 0.5em;
+  }
+  .text_zone h1{
+    font-size: 3rem;
+    line-height: 45px;
+    letter-spacing: -2px;
+  }
+  .text_zone img{
+    width: 35px; 
+    height: 35px;
+    margin-right: -0.11em;
+  }
+  .scroll_down_right{
+    left: -2em;
+    right: auto;
+    
+  }
+  .contact_button{
+    width: 50%;
+    margin-left: 10%;
   }
 }
