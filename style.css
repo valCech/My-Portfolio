@@ -22,14 +22,7 @@
     --primary-font: 'Open Sans', sans-serif;
     --secondary-font: 'La Belle Aurore', cursive;
 }
-h1 span{
-  font-size: 5rem;
-}
-h1 :nth-child(2){
-  font-size: 5rem;
-}
-#web_dev{font-size: 5rem
-}
+
 body{
     font-family: sans-serif;
     color: var(--white-color);
@@ -46,7 +39,7 @@ header{
     z-index: 2;
 }
 #sound{
-    padding: 0.43em;
+    padding: 7px;
     background-color: var(--dark-gray);
     border-radius: 5px;
     display: flex;
@@ -55,12 +48,12 @@ header{
 }
 .sound-cloud{
     font-size: 1.2rem;
-    margin: 0.43em;
+    margin: 7px;
     color: var(--neon-red);
 }
 .on-off {
   cursor: pointer;
-  margin-left: 0.3em;
+  margin-left: 5px;
 }
 #on {
   display: none;
@@ -97,7 +90,7 @@ header{
 
 /* ____________________________ASIDE SECTION (NAV BAR) STARTS HERE__________________________________________*/
 .aside{
-  width: 13rem;
+  width: 100%;
   height: 0%;
   position: fixed;
   top: 0;
@@ -119,7 +112,7 @@ header{
   flex-direction: column;
 }
 .logo_section{
-  min-height: 32vh;
+  min-height: 26vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -134,15 +127,12 @@ header{
   text-decoration: none;
 }
 .logo img{
-  height: 100px;
-  width: 100px;
+  height: auto;
+  width: 45px;
 }
 .logo > span{               
-  margin-top: 0;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: var(--white-color);
-  font-weight: 900;
-  
 }
 
 #name_v {
@@ -152,8 +142,8 @@ header{
   color: var(--neon-pink)
 }
 .logo_section > span{
-  margin-top: 1.6em;
-  font-size: 1.3rem;
+  margin-top: 25px;
+  font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -188,10 +178,10 @@ header{
 .social_icons{
   display: flex;
   list-style: none;
-  margin-bottom: 1.8em;
+  margin-bottom: 30px;
 }
 .social_icons li{
-  width: 2em;
+  width: 30px;
   font-size: 1rem;
 }
 .social_icons li a{
@@ -202,68 +192,93 @@ header{
 .social_icons li a:hover{
   color: var(--neon-pink);
 }
-/*-----------------NAV BAR ENDS HERE-----------------*/
+/* ____________________________HOME PAGE SECTION__________________________________________*/
 #section_home{
   min-height: 100vh;
   display:flex;
   align-items: center;
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
 }
 #heading{
-  font-size: 6rem;
-  line-height: 20px;
+  font-size: 3rem;
+  line-height: 45px;
   letter-spacing: -3px;
   color: var(--white-color);
   margin-bottom: 0.5em;
 }
 .text_zone h1{
-  font-size: 4rem;
-  line-height: 20px;
+  font-size: 3rem;
+  line-height: 45px;
   letter-spacing: -3px;
+  position: relative;
+}
+.text-zone h1::before{
+  content: '<h1>';
+  position: absolute;
+  top: -80px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+.text-zone h1::after{
+  content: '</h1>';
+  position: absolute;
+  bottom: -10px;
+  right: -70px;
+  font-size: 1.2rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
 }
 
 .text_zone img{
-  width: 70px; 
-  height: 70px;
-  margin-right: -0.11em;
+  width: 35px; 
+  height: 35px;
+  margin-right: -0.10em;
 }
 .text_zone .gray_text{
-  font-size: 1rem;
-  line-height: 30px;
+  margin-top: 30px;
+  color: #a2a2a3;
   letter-spacing: 3px;
-  margin-top: 1em;
+  font-size: 14px;
+  position: relative;
   color: var(--light-gray);
 }
 /*-----------------CONTACT BUTTON-----------------*/
 .contact_button{
-  margin-top: 3.12em;
   text-decoration: none;
-  text-align: center;
-  display: block;
   width: 100%;
   max-width: 200px;
+  height: 40px;
+  display: block;
   line-height: 40px;
+  letter-spacing: 3px;
   position: relative;
+  text-align: center;
+  color: #08fdd8;
+  margin-top: 50px;
 }
 .contact_button div{
   position: relative;
-  margin-top: 2.2em;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transition: all .3s ease-in-out;
+  transition:  all .3s ease-in-out;
 }
-.contact_button span.bg{ /*creates animation part 1*/
+.contact_button span.bg{
   position: absolute;
   width: 0%;
   height: 100%;
   left: -5px;
   top: 0;
   transition: all .3s ease-in-out;
-  transform: skewX(-18deg);
-  background-color: var(--neon-blue);
+  background-color: #08fdd8;
+  transform: skewX(-19deg);
+  
 }
-.contact_button:hover span.bg{ /*creates animation part 2*/
+.contact_button:hover span.bg{
   width: 110%;
 }
 .contact_button span.base{
@@ -275,10 +290,12 @@ header{
   box-sizing: border-box;
 }
 .contact_button span.text{
-  position: relative;
   color: var(--neon-blue);
-  font-size: 1.2rem;
-  letter-spacing: 3px; 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .contact_button:hover span.text{
   color: #1d1d1d;
@@ -299,6 +316,7 @@ header{
   left: 2em;
   right: auto;
 }
+
 .scroll_down i{
   transform: rotate(270deg);
   margin-left: .9em;
@@ -316,118 +334,99 @@ header{
   }
 }
 
-/*-----------------MEDIA SECTION 4 BIGGER SCREEN-----------------*/
-@media screen and (min-width: 950px) {
+
+
+@media screen and (min-width: 1100px) {
   header{
     justify-content: flex-end;
   }
   .btns_container{
-    display: none;
+      display: none;
   }
   .aside{
-    min-width: 10%;
-    height:100%;      
+     width: 10%;
+     height: 100%;
+      
   }
-  /*-- HOME SECTION --*/
-  #section_home{
-    padding-left: 20em;
+  .aside_wrapper{
+      height: 80%;
   }
-  #heading{
-    font-size: 4rem;
+  .logo_section{
+      min-height: 20vh;
   }
-  #logo_size{
-    margin-right: -0.8rem;
+  .logo img{
+      width: 50px;
+      height: auto;
+  }
+  .social_icons{
+      margin-bottom: 0;
+      
+  }
+  .social_icons li{
+      font-size: 1rem;
+      text-align: center;
+  }
+    /* home section */
+    #section_home{
+      padding-left: 15rem;
   }
   .text_zone h1{
-    font-size: 4rem;
-    line-height: 85px;
-    letter-spacing: -3px;
+      font-size: 6.3rem;
+      line-height: 85px;
+      letter-spacing: -6px;
   }
+  #heading{
+    font-size: 6.3rem;
+  }
+  .text_zone img{
+      width: 65px;
+      height: 72px;
+  }
+  .text_zone .gray-text{
+      font-size: 1rem;
+  }
+  .scroll_down{
+    display: flex;
+    margin: 5 auto;
+    position: absolute;
+    height: 5px;
+  }
+  .scroll_down_right{
+   z-index: 3;
+  }
+ 
   
-  .scroll_down_right{
-    left: 15em;
-    right: auto;
+  /* */
+  #section_work{
+      width: 85%;
+      margin: 0 30px 0 auto;
+      display: flex;
+      flex-direction: column;
   }
-}
-
-@media screen and (min-width: 741px) and (max-width: 949px){
-  #heading{
-    font-size: 3rem;
-    line-height: 20px;
-    letter-spacing: -2px;
-    color: var(--white-color);
-    margin-bottom: 0.5em;
+  .text_zone_2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
-  .text_zone h1{
-    font-size: 3rem;
-    line-height: 50px;
-    
+  #header{
+      font-size: 2.5rem;
   }
-  .text_zone img{
-    width: 35px; 
-    height: 35px;
-    margin-right: -0.11em;
+  .text_zone_2 p{
+      width: 700px;
+      font-size: 14px;
+      line-height: 1.5rem;
   }
-}
-@media screen and (min-width: 321px) and (max-width: 740px){
-  .clock{
-    font-size: 10px;
-    display: flex;
-    margin: 0 3em;
+  .fake_big_2{
+      font-size: 25rem;
+      font-weight: 700;
+      left: 560px;
+      top: 0;
   }
-  #section_home{
-    display:flex;
-    align-items: center;
-    padding-left: 1.5em;
+  .fake_magicwall{
+      padding-left: 8.5rem;
   }
-  #heading{
-    font-size: 3rem;
-    line-height: 20px;
-    letter-spacing: -2px;
-    color: var(--white-color);
-    margin-bottom: 0.5em;
-  }
-  .text_zone h1{
-    font-size: 3rem;
-    line-height: 45px;
-    letter-spacing: -3px;
-  }
-  .text_zone img{
-    width: 35px; 
-    height: 35px;
-    margin-right: -0.11em;
-  }
-}
-@media screen and (max-width: 320px){
-  .clock{
-    font-size: 10px;
-    display: flex;
-    margin: 0 4em;
-  }
-  #heading{
-    font-size: 3rem;
-    line-height: 50px;
-    letter-spacing: -1px;
-    color: var(--white-color);
-    margin-bottom: 0.5em;
-  }
-  .text_zone h1{
-    font-size: 3rem;
-    line-height: 45px;
-    letter-spacing: -2px;
-  }
-  .text_zone img{
-    width: 35px; 
-    height: 35px;
-    margin-right: -0.11em;
-  }
-  .scroll_down_right{
-    left: -2em;
-    right: auto;
-    
-  }
-  .contact_button{
-    width: 50%;
-    margin-left: 10%;
+  .fake_magicwall ul li{
+      width: 242px;
+      height: 236px;
   }
 }
