@@ -43,8 +43,8 @@ header::after{
   content: '<html5>';
   position: absolute;
   top: 95px;
-  left: 100px;
-  font-size: 1.2rem;
+  left: 150px;
+  font-size: .8rem;
   font-family: 'La Belle Aurore', cursive;
   color: #666565;
   letter-spacing: 3px;
@@ -227,7 +227,7 @@ header::after{
   content: '<script>';
   position: absolute;
   top: -50px;
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-family: 'La Belle Aurore', cursive;
   color: #666565;
   letter-spacing: 3px;
@@ -237,7 +237,7 @@ header::after{
   position: absolute;
   top: 95px;
   right: -70px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-family: 'La Belle Aurore', cursive;
   color: #666565;
   letter-spacing: 3px;
@@ -263,7 +263,7 @@ header::after{
   top: -30px;
   left: -16px;
   right: -10px;
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-family: 'La Belle Aurore', cursive;
   color: #666565;
   letter-spacing: 3px;
@@ -273,7 +273,7 @@ header::after{
   position: absolute;
   bottom: -30px;
   left: -16px;
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-family: 'La Belle Aurore', cursive;
   color: #666565;
   letter-spacing: 3px;
@@ -377,13 +377,16 @@ header::after{
   font-size: 2.5rem;
   color:var(--neon-blue) ;
   margin-bottom: 30px;
+  border: 1px white solid;
+  padding: .3rem 1rem;
+  width: fit-content;
 }
 .text_zone_2 p{
   color: var(--white-color);
   font-size: 1.2rem;
   line-height: 1.5em;
   margin-bottom: 30px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 .text_zone_2 p a{
   color: var(--neon-blue);
@@ -397,7 +400,7 @@ header::after{
   margin-bottom: 30px;
   left: 10px;
   right: 10px;
-  bottom: -50px;
+  top: 300px;
   font-weight: 900;
   letter-spacing: -10px;
   z-index: -999;
@@ -499,28 +502,40 @@ header::after{
   }
   #section_work{
       width: 85%;
-      margin: 0 30px 0 auto;
+      margin-left : 180px;
       display: flex;
       flex-direction: column;
   }
   .text_zone_2{
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: left;
+      justify-content: left;
+      max-width: 50%;
   }
   #header{
-      font-size: 2.5rem;
+    max-width: 600px;
+    font-size: 3.5rem;
+    border: 1px solid white;
+    padding: 10px;
   }
   .text_zone_2 p{
-      width: 700px;
-      font-size: 14px;
-      line-height: 1.5rem;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    padding-right: 15px;
   }
+  
   .fake_big_2{
       font-size: 25rem;
       font-weight: 700;
       left: 560px;
       top: 0;
+      margin-top: 150px;
+      margin-left: -540px;
+      padding: 0;
+      z-index: -999;
   }
   .fake_magicwall{
       padding-left: 8.5rem;
