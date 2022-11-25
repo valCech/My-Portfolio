@@ -44,11 +44,6 @@ const headingChange = () => {
 };
 headingChange();
 
-// Play music functionality
-document.addEventListener('DOMContentLoaded', () => {
-  myAudio = document.getElementById('myAudio');
-  myAudio.play();
-});
 
 // Not allowed by browser
 // window.onload = function() {
@@ -100,3 +95,38 @@ const myFunc = (navCondition) => {
             btnBars.style.display = "block";
     }
 };
+
+// Tagcanvas functionality
+$(document).ready(function(){
+  if(!$("#myCanvas").tagcanvas({
+    textColour : "#00ffff",
+    outlineColour : "#ff00ff",
+    reverse : true,
+    depth : 0.8,
+    maxSpeed : 0.05,
+    weight : true,
+    initial : [0.02, 0.02],
+    
+  },"tags")){
+    // something went wrong, hide the canvas container
+    $('#myCanvasContainer').hide();
+  }
+});
+
+// Fancy heading
+var fancyHeading = document.getElementsByClassName('fancy')[0];
+var letters = fancyHeading.textContent.split('');
+
+var content = letters.map((val, i) => {
+  let delay = Math.floor((Math.random() * 1000) + 1);
+  return ('<span style="animation-delay: '+ delay + 'ms">'
+          + val +
+          '</span>');
+});
+
+fancyHeading.innerHTML = "";
+
+for (var i = 0; i < content.length; i++) {
+  fancyHeading.innerHTML += content[i];
+}
+
