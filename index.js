@@ -96,7 +96,7 @@ const myFunc = (navCondition) => {
     }
 };
 
-// Tagcanvas functionality
+// TagCanvas functionality
 $(document).ready(function(){
   if(!$("#myCanvas").tagcanvas({
     textColour : "#00ffff",
@@ -112,6 +112,7 @@ $(document).ready(function(){
     $('#myCanvasContainer').hide();
   }
 });
+
 
 // Fancy heading
 var fancyHeading = document.getElementsByClassName('fancy')[0];
