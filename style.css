@@ -100,7 +100,7 @@ header{
 
 /* ____________________________ASIDE SECTION (NAV BAR) STARTS HERE__________________________________________*/
 .aside{
-  width: 100%;
+  width: 30%;
   height: 0%;
   position: fixed;
   top: 0;
@@ -335,49 +335,66 @@ header{
 .contact_button:hover span.text{
   color: #1d1d1d;
 }
-.scroll_down{
-  display: inline-block;
-  flex-direction: column;
-  font-size: 14px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 2.9rem;
-  right: 2em;
-  transform: rotate(90deg);
-  padding: 0.5em 1em;
-  
 
+/* ____________________________Scroll Down Animation__________________________________________*/
+
+.center_do_not_use {
+display: block;
+margin: auto;
+width: 0px;
+white-space: nowrap;
+position: absolute;
+right: 60px;
+bottom: 10px;
 }
-.scroll_down_left{
-  left: 10px;
-  right: auto;
+.left_center_do_not_use {
+display: block;
+margin: auto;
+width: 0px;
+white-space: nowrap;
+position: absolute;
+bottom: 10px;
 }
 
-.scroll_down i{
-  transform: rotate(270deg);
-  margin-left: .9em;
+.arrow_circle_down {
+  display: block;
+  width: 40px;
+  height: 6rem;
+  margin: 0 auto;
 }
-.scroll_down span{
-  display: flex; /*to make the animation work*/
-  flex-direction: column;
-  writing-mode: horizontal-tb;
-  animation: scroll .5s linear infinite alternate-reverse;
+.left_arrow_circle_down {
+  display: block;
+  width: 40px;
+  height: 6rem;
+  margin: 0 auto;
 }
-@keyframes scroll{
-  0%{
-    transform: translateX(-7px);
+
+
+.bounce {
+  animation: bounce 4s;
+animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+      transform: translateY(0);
   }
-  100%{
-    transform: translateX(7px);
+  50% {
+      transform: translateY(-12px);
   }
 }
+
 
 /* ____________________________PAGE 2__________________________________________*/
 
 #section_work{
   padding: 5rem 0 5rem 1.5rem;
   position: relative;
+  margin-top: 100px;
 }
 
 #header{
@@ -468,7 +485,7 @@ header{
 .wrapper{
   width: 90%;
   margin: 0 auto;
-  max-width: auto;
+  max-width: 80rem;
 }
 
 .cols{
@@ -540,11 +557,11 @@ header{
 }
 .container:hover .front,
 .container:hover .back{
-    -webkit-transition: -webkit-transform 1.2 cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform 1.2 cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform 1.2 cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 1.2 cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 1.2 cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 1.2 cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .back{
@@ -642,43 +659,58 @@ header{
   }
 }
 
+/*-----------------Scroll Down Animation-------------------*/
+.center_do_not_use_section2 {
+  display: block;
+  margin-bottom:-200px;
+  width: 0px;
+  white-space: nowrap;
+  position: absolute;
+  right: 60px;
+  bottom: 10px;
+  }
+  .left_center_do_not_use_section2 {
+  display: block;
+  margin-bottom:-200px;
+  width: 0px;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 10px;
+  }
+
 /*-----------------ME & Myself Section / Page 3-----------------*/
 
 #header2{
   font-size: 2.5rem;
   color:var(--neon-blue) ;
-  margin:60px 0 0 0;
-  border: 1px white solid;
-  padding: .3rem 1rem;
-  width: fit-content;
-  padding: 1.3rem 1rem;
-  text-align: center;
-}
-#offer_title{
-  margin:20px 0 0px 0;
-  display: flex;
-  justify-content: center;
   margin-bottom: 30px;
-  
+  border: 1px white solid;
+  padding: 1.2rem 1rem;
+  width: fit-content;
 }
+
 #section_about{
-  
-  position: relative;
   padding-left: 1.5rem;
-  margin-top: 100px;
+  margin-top: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
+  position: relative;
 }
-#offer_title{
-  color:var(--neon-pink) ;
-  margin:60px 0 0 0;
-  padding: 1rem;
-  width: fit-content;
-  padding: 1.3rem 1rem;
+.text_zone3 p{
+  margin-bottom: 15px;
+  line-height: 1.5rem;
+  text-align: left;
+  padding-right: 5rem;
+  
+}
+#quote{
+  margin-top: 3rem;
+  text-align: left;
+}
+.tech{
+  text-decoration: none;
+  color: #08fdd8;
 }
 
 .text_zone3{
@@ -701,6 +733,130 @@ header{
     opacity: 1;
     filter: blur(0px);
   }
+}
+
+/*-----------------SCroll Down Animation Section 3-----------------*/
+  .center_do_not_use_section3 {
+  display: block;
+  margin-bottom:-220px;
+  width: 0px;
+  white-space: nowrap;
+  position: absolute;
+  right: 60px;
+  bottom: 10px;
+  }
+  .left_center_do_not_use_section3 {
+  display: block;
+  margin-bottom:-220px;
+  width: 0px;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 10px;
+  }
+  
+  .arrow_circle_down {
+    display: block;
+    width: 40px;
+    height: 6rem;
+    margin: 0 auto;
+  }
+  .left_arrow_circle_down {
+    display: block;
+    width: 40px;
+    height: 6rem;
+    margin: 0 auto;
+  }
+  
+  .bounce {
+    animation: bounce 4s;
+  animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+  }
+
+/*-----------------Page 4 Contact & Canvas Electro-----------------*/
+#electro{
+  margin-top: 300px;
+  
+}
+
+#h1_form{
+  font-size: 2.5rem;
+  color:var(--neon-blue) ;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
+  width: fit-content;
+}
+/*-----------------Contact Form-----------------*/
+.container_form{
+  margin-top: -600px;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+.contact-fome{
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.input-class{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-class, .msg{
+  width: 48%;
+}
+.input-class .input, .msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #41B5E6;
+  padding: 10px;
+  color: aqua;
+  width: 100%;
+}
+.msg textarea{
+  height: 200px;
+}
+::-webkit-input-placeholder{
+  color: aquamarine;
+}
+::-moz-input-placeholder{
+  color: aquamarine;
+}
+
+.btn{
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  border-radius:  5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  box-shadow: 3px 3px 3px #888888;
+}
+msg,button:hover{
+  background-color: var(--neon-blue);
+  color: black;
 }
 
 /*-----------------Breakpoints-----------------*/
@@ -811,53 +967,132 @@ header{
   }
 }
 
-/*-----------------PARTICLES PART-----------------*/
 
+@media screen and (min-width: 1200px) {
+  header{
+      justify-content: flex-end;
+      align-items: flex-end;
+  }
+  .btns-container{
+      display: none;
+  }
 
-.nav,
-.slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  background-color: #1e1f26;
-  text-align: center;
-  padding: 0 2em;
+  .aside{
+      width: 10%;
+      height: 100%;
+  }
+  .aside_wrapper{
+      height: 80%;
+  }
+  .logo_section{
+      min-height: 25vh;
+  }
+  .logo img{
+      width: 50px;
+      height: auto;
+  }
+  .social_icons{
+      margin-bottom: 0;
+      text-align: center;
+  }
+  .social_icons li{
+     
+      font-size: 1rem;
+  }
+
+  /* home section */
+  #section_home{
+      padding-left: 13rem;
+  }
+  .text_zone h1{
+      font-size: 6.3rem;
+      line-height: 85px;
+      letter-spacing: -6px;
+  }
+  .text_zone img{
+      width: 50px;
+      height: 72px;
+  }
+  .text_zone .gray_text{
+      font-size: 1rem;
+  }
+  .scroll_down{
+      right: -30px;
+      bottom: 3.3rem;
+  }
+  .scroll_down__left{
+      left: 110px;
+      right: auto;
+  }
+  /* part 2 media query bigger screens starts here */
+  #section_work{
+      width: 85%;
+      margin: 0 30px 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+  .text_zone_2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  #header{
+      font-size: 2.5rem;
+  }
+  .text_zone_2 p{
+      width: 700px;
+      font-size: 14px;
+      line-height: 1.5rem;
+  }
+  .fake_big_2{
+      font-size: 25rem;
+      font-weight: 700;
+      left: 560px;
+      top: 0;
+  }
+  .fake_magicwall{
+      padding-left: 8.5rem;
+  }
+  .fake_magicwall ul li{
+      width: 242px;
+      height: 236px;
+  }
+
+  /* media query for about section */
+  #section_about{
+      flex-direction: row;
+      padding-left: 13rem;
+  }
+  .text_zone3 #header{
+      width: 500px;
+      font-size: 3rem;
+  }
+  .text_zone3 p{
+      width: 600px;
+  }
+  .skills_charts{
+      margin-right: 20%;
+  }
+
 }
 
-
-
-@media (min-width: 800px) {
-  .nav h1,
-  .slider h1 {
-    font-size: 5vw;
+/*-----------------Media Contact Form-----------------*/
+@media screen and (max-width: 600px){
+  .container_form{
+    margin-top: -400px;
   }
-
-  .nav h2,
-  .slider h2 {
-    font-size: 3vw;
+  .contact-fome{
+      flex-direction: column;
   }
-
-  .nav-tab {
-    font-size: 3vw;
+  .msg text-area{
+      height: 80px;
+  }
+  .input-class, .msg{
+      width: 100%;
   }
 }
 
-@media screen and (max-width: 360px) {
-  .nav h1,
-  .slider h1 {
-    font-size: 8vw;
-  }
+/**-----------------Magic Mouse Test-----------------*/
 
-  .nav h2,
-  .slider h2 {
-    font-size: 2vw;
-    letter-spacing: 0.2vw;
-  }
 
-  .nav-tab {
-    font-size: 1.2vw;
-  }
-}
+
