@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio website created by Vlastimil Slechta from scratch, code by code, and endless hours, whenever there was any free time. Enjoy the view!">
+    <meta name="Vlastimil Slechta" content="Val's Portfolio Website">
+    <meta property="og:title" content="Val's Portfolio Website">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_UK">
+    <meta property="og:url" content="https://www.slechtav.com">
+    <meta property="og:image:type" content="./Transparent4K.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="V shape logo in blue and red neon colors">
+    <meta property="og:site_name" content="Front-End Developer's Portfolio">
+    <title>Val | Front End Developer | Digital Marketing Expert</title>
+    <link rel="shortcut icon" href="./myImages/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <script src="https://kit.fontawesome.com/4d77a8d609.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <div id="sound">
+                <audio id="myAudio">
+                  <source src="./Mineral_-_HRCRX.mp3" type="audio/mp3" allow="autoplay" loop>
+                </audio>
+                <i class="fab fa-soundcloud sound-cloud"></i>
+                <span>Sound</span>
+                <div class="on-off">
+                  <span id="off">OFF</span>
+                  <span id="on">ON</span>
+                </div>
+              </div>
+            <div id="MyClockDisplay" class="clock" onload="showTime()"> </div>
+            <div class="btns_container"> <i class="fa-solid fa-bars bars"></i> <i class="fa-solid fa-xmark times"></i> </div>
+        </header> <!--  sidebar -->
+        <aside class="aside">
+            <div class="aside_wrapper">
+                <div class="logo_section"> <a class="logo" rel="home" href="#home"> <img id=image src="./Transparent4K.png" alt="logo letter V"> <span>Val</span> </a> <span>Web De<span id="name_v">v</span>e<span id="name_l">l</span>oper</span> </div>
+                <nav class="nav_links show_now"> <a href="#home">Home</a> <a href="#portfolio">Portfolio</a> <a href="#skills">Skills</a> <a href="#contact_form">Contacts</a> </nav> <!-- social media icons -->
+                <ul class="social_icons">
+                    <li><a href="https://github.com/valCech" target="_blank" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/ifitboy/" target="_blank" aria-label="View source on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/vlastimil-šlechta-2988b3104/" target="_blank" aria-label="View source on LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </aside> <!-- Section one -->
+        <section class="section_one" id="section_home">
+            <div class="text_zone">
+                <h1><span id="heading">Hi,</span><br> I'm <img id="logo_size" src="./Transparent4K.png" alt="Val's logo in shape V">al, <br>web developer </h1>
+                <p class="gray_text">Front End Developer | Digital Marketing Expert</p> <br>
+                <!-- Contact Button   --> <a href="#contact_form" class="contact_button">
+                    <div> <span class="bg"></span> <span class="base"></span> <span class="text"> Contact me! </span> </div>
+                </a>
+            </div> <!-- Scroll Animation   -->
+            <div class="center_do_not_use"> <svg class="arrow_circle_down bounce" xmlns="http://www.w3.org/2000/svg" width="18.296" height="172.206" viewBox="0 0 18.296 172.206">
+                    <g class="Group_291" data-name="Group 291" transform="translate(-1440.926 -629.613)">
+                        <path class="Path_3668" data-name="Path 3668" d="M4.981,2.825,6.434,1.747A3.471,3.471,0,0,0,3.429,0,3.03,3.03,0,0,0,.31,3.037c0,3.184,4.916,3.054,4.916,5.209A1.573,1.573,0,0,1,3.593,9.929c-.833,0-1.47-.457-1.927-1.535H1.5L0,9.488a3.683,3.683,0,0,0,3.593,2.433A3.7,3.7,0,0,0,7.349,8.247c0-3.756-4.916-3.707-4.916-5.209a.956.956,0,0,1,1-1.045,1.764,1.764,0,0,1,1.388.833Zm15.367.49V1.159A6.515,6.515,0,0,0,16.429,0a6.012,6.012,0,0,0-6.042,5.961,6.012,6.012,0,0,0,6.042,5.961,6.515,6.515,0,0,0,3.919-1.159V8.606l-.082-.082a5.874,5.874,0,0,1-3.838,1.4,3.914,3.914,0,0,1-3.887-3.968,3.914,3.914,0,0,1,3.887-3.968,5.874,5.874,0,0,1,3.838,1.4Zm3.87-3.07-.082.082V11.595l.082.082h1.731l.082-.082V6.908h1.208l3.511,4.687.082.082h2.237l.082-.082L29.33,6.418a3,3,0,0,0,1.829-2.842c0-1.878-1.47-3.331-3.838-3.331Zm1.813,1.911h1.29c1.061,0,1.682.506,1.682,1.421s-.621,1.437-1.682,1.437h-1.29ZM40.794,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,40.794,0Zm0,1.992A3.9,3.9,0,0,1,44.68,5.961a3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,40.794,1.992ZM50.462.245,50.4.31v11.3l.065.065h6.745l.065-.065V9.847l-.065-.082H52.291V.31L52.225.245Zm10.174,0L60.57.31v11.3l.065.065H67.38l.065-.065V9.847l-.065-.082H62.465V.31L62.4.245Zm16.347,0L76.9.327V11.595l.082.082H80.82a5.771,5.771,0,0,0,6.042-5.716A5.771,5.771,0,0,0,80.82.245ZM78.8,2.156H80.82a3.728,3.728,0,0,1,3.919,3.805A3.728,3.728,0,0,1,80.82,9.766H78.8ZM96.024,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,96.024,0Zm0,1.992a3.9,3.9,0,0,1,3.887,3.968,3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,96.024,1.992ZM104.369.245l-.082.082,3.723,11.268.082.082h1.845l.082-.082,2.45-7.724,2.433,7.724.082.082h1.862l.082-.082L120.65.327l-.082-.082h-1.976l-.082.082L115.9,8.672,113.5.49l-.082-.082h-1.894L111.44.49l-2.4,8.182L106.426.327l-.082-.082Zm19.335,0-.082.082V11.595l.082.082h1.731l.082-.082V3.4l6.287,8.2.163.082H133.8l.082-.082V.327L133.8.245h-1.747l-.082.082v8.2L125.68.327l-.163-.082Z" transform="translate(1456.627 629.613) rotate(90)" fill="#fff" />
+                        <g class="Group_254" data-name="Group 254" transform="translate(1441.457 776.939)">
+                            <path class="Path_19" data-name="Path 19" d="M0,0V24.05" transform="translate(8.618 0)" fill="none" stroke="#fff" stroke-width="1.5" />
+                            <path class="Path_20" data-name="Path 20" d="M0,0H12.187V12.187" transform="translate(17.236 15.201) rotate(135)" fill="none" stroke="#fff" stroke-width="1.5" />
+                        </g>
+                    </g>
+                </svg> 
+            </div>
+            <div class="left_center_do_not_use"> <svg class="left_arrow_circle_down bounce" xmlns="http://www.w3.org/2000/svg" width="18.296" height="172.206" viewBox="0 0 18.296 172.206">
+                    <g class="Group_291" data-name="Group 291" transform="translate(-1440.926 -629.613)">
+                        <path class="Path_3668" data-name="Path 3668" d="M4.981,2.825,6.434,1.747A3.471,3.471,0,0,0,3.429,0,3.03,3.03,0,0,0,.31,3.037c0,3.184,4.916,3.054,4.916,5.209A1.573,1.573,0,0,1,3.593,9.929c-.833,0-1.47-.457-1.927-1.535H1.5L0,9.488a3.683,3.683,0,0,0,3.593,2.433A3.7,3.7,0,0,0,7.349,8.247c0-3.756-4.916-3.707-4.916-5.209a.956.956,0,0,1,1-1.045,1.764,1.764,0,0,1,1.388.833Zm15.367.49V1.159A6.515,6.515,0,0,0,16.429,0a6.012,6.012,0,0,0-6.042,5.961,6.012,6.012,0,0,0,6.042,5.961,6.515,6.515,0,0,0,3.919-1.159V8.606l-.082-.082a5.874,5.874,0,0,1-3.838,1.4,3.914,3.914,0,0,1-3.887-3.968,3.914,3.914,0,0,1,3.887-3.968,5.874,5.874,0,0,1,3.838,1.4Zm3.87-3.07-.082.082V11.595l.082.082h1.731l.082-.082V6.908h1.208l3.511,4.687.082.082h2.237l.082-.082L29.33,6.418a3,3,0,0,0,1.829-2.842c0-1.878-1.47-3.331-3.838-3.331Zm1.813,1.911h1.29c1.061,0,1.682.506,1.682,1.421s-.621,1.437-1.682,1.437h-1.29ZM40.794,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,40.794,0Zm0,1.992A3.9,3.9,0,0,1,44.68,5.961a3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,40.794,1.992ZM50.462.245,50.4.31v11.3l.065.065h6.745l.065-.065V9.847l-.065-.082H52.291V.31L52.225.245Zm10.174,0L60.57.31v11.3l.065.065H67.38l.065-.065V9.847l-.065-.082H62.465V.31L62.4.245Zm16.347,0L76.9.327V11.595l.082.082H80.82a5.771,5.771,0,0,0,6.042-5.716A5.771,5.771,0,0,0,80.82.245ZM78.8,2.156H80.82a3.728,3.728,0,0,1,3.919,3.805A3.728,3.728,0,0,1,80.82,9.766H78.8ZM96.024,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,96.024,0Zm0,1.992a3.9,3.9,0,0,1,3.887,3.968,3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,96.024,1.992ZM104.369.245l-.082.082,3.723,11.268.082.082h1.845l.082-.082,2.45-7.724,2.433,7.724.082.082h1.862l.082-.082L120.65.327l-.082-.082h-1.976l-.082.082L115.9,8.672,113.5.49l-.082-.082h-1.894L111.44.49l-2.4,8.182L106.426.327l-.082-.082Zm19.335,0-.082.082V11.595l.082.082h1.731l.082-.082V3.4l6.287,8.2.163.082H133.8l.082-.082V.327L133.8.245h-1.747l-.082.082v8.2L125.68.327l-.163-.082Z" transform="translate(1456.627 629.613) rotate(90)" fill="#fff" />
+                        <g class="Group_254" data-name="Group 254" transform="translate(1441.457 776.939)">
+                            <path class="Path_19" data-name="Path 19" d="M0,0V24.05" transform="translate(8.618 0)" fill="none" stroke="#fff" stroke-width="1.5" />
+                            <path class="Path_20" data-name="Path 20" d="M0,0H12.187V12.187" transform="translate(17.236 15.201) rotate(135)" fill="none" stroke="#fff" stroke-width="1.5" />
+                        </g>
+                    </g>
+                </svg> 
+            </div>
+        </section>    
+    </div>
+    <!-- Page 2 -->
+    <div id="portfolio"></div>
+    <section id="section_work">
+        <div id="header" class="line">
+            <h2 class="flipy">My Portfolio</h2>
+        </div>
+        <div class="text_zone_2">
+            <div>
+                <p class="text_zone_2_p"> <br> I am a web developer from the Czech Republic living in St.Albans, UK.<br>I built this website from the ground up using a variety of coding languages.<br> I have had various roles within the digital marketing sector including SEO, PPC, Social Media and Web Development where my passion truly lies. <br> Visit <a href="https://github.com/valCech?tab=repositories" target=”_blank” aria-label="View source on GitHub">My Work</a> repositories on <a href="https://github.com/" target=”_blank” aria-label="View source on GitHub">GitHub.</a></p>
+            </div>
+        </div>
+        <div class="fake_big_2"> WORK </div> 
+   <!-- Gallery -->
+    <div class="testimonials">
+        <div class="testimonial">
+            <img src="./myImages/pepino.round.png.png" alt="John Doe">
+            <h2>Josef Novak</h2>
+            <h3><a class="link-testimonial" href="https://limousine-mercedes.cz/subdom/en/" target="_blank">Limousine-Mercedes</a></h3>
+            <p>"I was in a bind when my website crashed. I needed it up and running again as soon as possible. Vlastimil fixed it quickly and efficiently, and the website was even better than before."</p>
+        </div>
+        <div class="testimonial">
+            <img src="./myImages/pablo.round.png.png" alt="Jane Doe">
+            <h2>Pablo Antar</h2>
+            <h3><a class="link-testimonial" href="https://icomex.org/" target="_blank">iComex Group</a></h3>
+            <p>"Vlastimil provided excellent customer service. He was always responsive to my needs and he went above and beyond to make sure that I was happy with my website. I would highly recommend him to anyone looking for a web developer."</p>
+        </div>
+        <div class="testimonial">
+            <img src="./myImages/david.rounded.png" alt="John Smith">
+            <h2>David Slechta</h2>
+            <h3><a class="link-testimonial" href="http://mensup.cz/" target="_blank">MensUp Supplements</a></h3>
+            <p>"Vlastimil exceeded my expectations with the quality of his work. He created a website that was exactly what I wanted, on time and within budget. If you looking for a reliable developer look no further."</p>
+        </div>
+        <div class="testimonial">
+            <img src="./myImages/round.flame.png" alt="Jane Smith">
+            <h2>Flame Emin</h2>
+            <h3><a class="link-testimonial" href="https://www.instagram.com/flame_fit_/" target="_blank">Influencer</a></h3>
+            <p>"I was impressed with the digital marketing services that Vlastimil provided. He helped me increase my Instagram traffic significantly, and I am confident that my business will continue to grow thanks to his expertise."</p>
+        </div>
+    </div>    
+                <!-- My Portfolio Button --> <a href="https://www.linkedin.com/in/vlastimil-%C5%A1lechta-2988b3104/details/certifications/" target="_blank" class="contact_button">
+                    <div id="skill-button"> <span class="bg"></span> <span class="base"></span> <span class="text"> Certifications </span> </div>
+                </a></div>
+        </div>
+
+        <!-- Scroll Animation   -->
+        <div class="center_do_not_use_section2"> <svg class="arrow_circle_down bounce" xmlns="http://www.w3.org/2000/svg" width="18.296" height="172.206" viewBox="0 0 18.296 172.206">
+                <g class="Group_291" data-name="Group 291" transform="translate(-1440.926 -629.613)">
+                    <path class="Path_3668" data-name="Path 3668" d="M4.981,2.825,6.434,1.747A3.471,3.471,0,0,0,3.429,0,3.03,3.03,0,0,0,.31,3.037c0,3.184,4.916,3.054,4.916,5.209A1.573,1.573,0,0,1,3.593,9.929c-.833,0-1.47-.457-1.927-1.535H1.5L0,9.488a3.683,3.683,0,0,0,3.593,2.433A3.7,3.7,0,0,0,7.349,8.247c0-3.756-4.916-3.707-4.916-5.209a.956.956,0,0,1,1-1.045,1.764,1.764,0,0,1,1.388.833Zm15.367.49V1.159A6.515,6.515,0,0,0,16.429,0a6.012,6.012,0,0,0-6.042,5.961,6.012,6.012,0,0,0,6.042,5.961,6.515,6.515,0,0,0,3.919-1.159V8.606l-.082-.082a5.874,5.874,0,0,1-3.838,1.4,3.914,3.914,0,0,1-3.887-3.968,3.914,3.914,0,0,1,3.887-3.968,5.874,5.874,0,0,1,3.838,1.4Zm3.87-3.07-.082.082V11.595l.082.082h1.731l.082-.082V6.908h1.208l3.511,4.687.082.082h2.237l.082-.082L29.33,6.418a3,3,0,0,0,1.829-2.842c0-1.878-1.47-3.331-3.838-3.331Zm1.813,1.911h1.29c1.061,0,1.682.506,1.682,1.421s-.621,1.437-1.682,1.437h-1.29ZM40.794,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,40.794,0Zm0,1.992A3.9,3.9,0,0,1,44.68,5.961a3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,40.794,1.992ZM50.462.245,50.4.31v11.3l.065.065h6.745l.065-.065V9.847l-.065-.082H52.291V.31L52.225.245Zm10.174,0L60.57.31v11.3l.065.065H67.38l.065-.065V9.847l-.065-.082H62.465V.31L62.4.245Zm16.347,0L76.9.327V11.595l.082.082H80.82a5.771,5.771,0,0,0,6.042-5.716A5.771,5.771,0,0,0,80.82.245ZM78.8,2.156H80.82a3.728,3.728,0,0,1,3.919,3.805A3.728,3.728,0,0,1,80.82,9.766H78.8ZM96.024,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,96.024,0Zm0,1.992a3.9,3.9,0,0,1,3.887,3.968,3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,96.024,1.992ZM104.369.245l-.082.082,3.723,11.268.082.082h1.845l.082-.082,2.45-7.724,2.433,7.724.082.082h1.862l.082-.082L120.65.327l-.082-.082h-1.976l-.082.082L115.9,8.672,113.5.49l-.082-.082h-1.894L111.44.49l-2.4,8.182L106.426.327l-.082-.082Zm19.335,0-.082.082V11.595l.082.082h1.731l.082-.082V3.4l6.287,8.2.163.082H133.8l.082-.082V.327L133.8.245h-1.747l-.082.082v8.2L125.68.327l-.163-.082Z" transform="translate(1456.627 629.613) rotate(90)" fill="#fff" />
+                    <g class="Group_254" data-name="Group 254" transform="translate(1441.457 776.939)">
+                        <path class="Path_19" data-name="Path 19" d="M0,0V24.05" transform="translate(8.618 0)" fill="none" stroke="#fff" stroke-width="1.5" />
+                        <path class="Path_20" data-name="Path 20" d="M0,0H12.187V12.187" transform="translate(17.236 15.201) rotate(135)" fill="none" stroke="#fff" stroke-width="1.5" />
+                    </g>
+                </g>
+            </svg> </div>
+        <div class="left_center_do_not_use_section2"> <svg class="left_arrow_circle_down bounce" xmlns="http://www.w3.org/2000/svg" width="18.296" height="172.206" viewBox="0 0 18.296 172.206">
+                <g class="Group_291" data-name="Group 291" transform="translate(-1440.926 -629.613)">
+                    <path class="Path_3668" data-name="Path 3668" d="M4.981,2.825,6.434,1.747A3.471,3.471,0,0,0,3.429,0,3.03,3.03,0,0,0,.31,3.037c0,3.184,4.916,3.054,4.916,5.209A1.573,1.573,0,0,1,3.593,9.929c-.833,0-1.47-.457-1.927-1.535H1.5L0,9.488a3.683,3.683,0,0,0,3.593,2.433A3.7,3.7,0,0,0,7.349,8.247c0-3.756-4.916-3.707-4.916-5.209a.956.956,0,0,1,1-1.045,1.764,1.764,0,0,1,1.388.833Zm15.367.49V1.159A6.515,6.515,0,0,0,16.429,0a6.012,6.012,0,0,0-6.042,5.961,6.012,6.012,0,0,0,6.042,5.961,6.515,6.515,0,0,0,3.919-1.159V8.606l-.082-.082a5.874,5.874,0,0,1-3.838,1.4,3.914,3.914,0,0,1-3.887-3.968,3.914,3.914,0,0,1,3.887-3.968,5.874,5.874,0,0,1,3.838,1.4Zm3.87-3.07-.082.082V11.595l.082.082h1.731l.082-.082V6.908h1.208l3.511,4.687.082.082h2.237l.082-.082L29.33,6.418a3,3,0,0,0,1.829-2.842c0-1.878-1.47-3.331-3.838-3.331Zm1.813,1.911h1.29c1.061,0,1.682.506,1.682,1.421s-.621,1.437-1.682,1.437h-1.29ZM40.794,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,40.794,0Zm0,1.992A3.9,3.9,0,0,1,44.68,5.961a3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,40.794,1.992ZM50.462.245,50.4.31v11.3l.065.065h6.745l.065-.065V9.847l-.065-.082H52.291V.31L52.225.245Zm10.174,0L60.57.31v11.3l.065.065H67.38l.065-.065V9.847l-.065-.082H62.465V.31L62.4.245Zm16.347,0L76.9.327V11.595l.082.082H80.82a5.771,5.771,0,0,0,6.042-5.716A5.771,5.771,0,0,0,80.82.245ZM78.8,2.156H80.82a3.728,3.728,0,0,1,3.919,3.805A3.728,3.728,0,0,1,80.82,9.766H78.8ZM96.024,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,96.024,0Zm0,1.992a3.9,3.9,0,0,1,3.887,3.968,3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,96.024,1.992ZM104.369.245l-.082.082,3.723,11.268.082.082h1.845l.082-.082,2.45-7.724,2.433,7.724.082.082h1.862l.082-.082L120.65.327l-.082-.082h-1.976l-.082.082L115.9,8.672,113.5.49l-.082-.082h-1.894L111.44.49l-2.4,8.182L106.426.327l-.082-.082Zm19.335,0-.082.082V11.595l.082.082h1.731l.082-.082V3.4l6.287,8.2.163.082H133.8l.082-.082V.327L133.8.245h-1.747l-.082.082v8.2L125.68.327l-.163-.082Z" transform="translate(1456.627 629.613) rotate(90)" fill="#fff" />
+                    <g class="Group_254" data-name="Group 254" transform="translate(1441.457 776.939)">
+                        <path class="Path_19" data-name="Path 19" d="M0,0V24.05" transform="translate(8.618 0)" fill="none" stroke="#fff" stroke-width="1.5" />
+                        <path class="Path_20" data-name="Path 20" d="M0,0H12.187V12.187" transform="translate(17.236 15.201) rotate(135)" fill="none" stroke="#fff" stroke-width="1.5" />
+                    </g>
+                </g>
+            </svg> </div>
+    </section>
+    <!-- Page 3 Me And Myself -->
+    <div id="skills"></div>
+    <section id="section_about">
+        <div class="text_zone3">
+            <div id="header2">
+                <h2 class="fancy">Me & Myself</h2>
+            </div>
+            <p> My knowledge of fundamental design concepts and expertise in HTML, CSS, JavaScript, jQuery, and other libraries are my strongest suit. </p>
+            <p> Because of my background in Digital Marketing, I also offer extensive knowledge of both technical and organic SEO techniques. </p>
+            <p> As a coder, I can offer experience with responsive and adaptive design. Ensuring web design is optimized for smartphones and other mobile devices. </p>
+            <div id="quote"> <q><i> Always code as if the guy who ends up maintaining your code <br> will be a violent psychopath who knows where you live </i></q>
+                <p>
+                    <b>-John Woods</b>
+                </p>
+            </div>
+        </div>
+        <div class="skills_charts">
+            <div id="myCanvasContainer"> <canvas width="600" height="600" id="myCanvas">
+                    <ul id="tags">
+                        <li> <a href="#" target="blank">HTML</a></li>
+                        <li> <a href="#" target="blank">HTTP</a></li>
+                        <li> <a href="#" target="blank">jQuery</a></li>
+                        <li> <a href="#" target="blank">Bootstrap</a></li>
+                        <li> <a href="#" target="blank">Python</a></li>
+                        <li> <a href="#" target="blank">JavaScript</a></li>
+                        <li> <a href="#" target="blank">Chai</a></li>
+                        <li> <a href="#" target="blank">WordPress</a></li>
+                        <li> <a href="#" target="blank">UI</a></li>
+                        <li> <a href="#" target="blank">SEO</a></li>
+                        <li> <a href="#" target="blank">PPC</a></li>
+                        <li> <a href="#" target="blank">CSS3</a></li>
+                        <li> <a href="#" target="blank">GIT</a></li>
+                        <li> <a href="#" target="blank">API</a></li>
+                        <li> <a href="#" target="blank">UX</a></li>
+                        <li> <a href="#" target="blank">JSON</a></li>
+                    </ul>
+                </canvas> </div>
+        </div> 
+        <!-- Scroll Animation -->
+        <div class="center_do_not_use_section3"> <svg class="arrow_circle_down bounce" xmlns="http://www.w3.org/2000/svg" width="18.296" height="172.206" viewBox="0 0 18.296 172.206">
+                <g class="Group_291" data-name="Group 291" transform="translate(-1440.926 -629.613)">
+                    <path class="Path_3668" data-name="Path 3668" d="M4.981,2.825,6.434,1.747A3.471,3.471,0,0,0,3.429,0,3.03,3.03,0,0,0,.31,3.037c0,3.184,4.916,3.054,4.916,5.209A1.573,1.573,0,0,1,3.593,9.929c-.833,0-1.47-.457-1.927-1.535H1.5L0,9.488a3.683,3.683,0,0,0,3.593,2.433A3.7,3.7,0,0,0,7.349,8.247c0-3.756-4.916-3.707-4.916-5.209a.956.956,0,0,1,1-1.045,1.764,1.764,0,0,1,1.388.833Zm15.367.49V1.159A6.515,6.515,0,0,0,16.429,0a6.012,6.012,0,0,0-6.042,5.961,6.012,6.012,0,0,0,6.042,5.961,6.515,6.515,0,0,0,3.919-1.159V8.606l-.082-.082a5.874,5.874,0,0,1-3.838,1.4,3.914,3.914,0,0,1-3.887-3.968,3.914,3.914,0,0,1,3.887-3.968,5.874,5.874,0,0,1,3.838,1.4Zm3.87-3.07-.082.082V11.595l.082.082h1.731l.082-.082V6.908h1.208l3.511,4.687.082.082h2.237l.082-.082L29.33,6.418a3,3,0,0,0,1.829-2.842c0-1.878-1.47-3.331-3.838-3.331Zm1.813,1.911h1.29c1.061,0,1.682.506,1.682,1.421s-.621,1.437-1.682,1.437h-1.29ZM40.794,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,40.794,0Zm0,1.992A3.9,3.9,0,0,1,44.68,5.961a3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,40.794,1.992ZM50.462.245,50.4.31v11.3l.065.065h6.745l.065-.065V9.847l-.065-.082H52.291V.31L52.225.245Zm10.174,0L60.57.31v11.3l.065.065H67.38l.065-.065V9.847l-.065-.082H62.465V.31L62.4.245Zm16.347,0L76.9.327V11.595l.082.082H80.82a5.771,5.771,0,0,0,6.042-5.716A5.771,5.771,0,0,0,80.82.245ZM78.8,2.156H80.82a3.728,3.728,0,0,1,3.919,3.805A3.728,3.728,0,0,1,80.82,9.766H78.8ZM96.024,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,96.024,0Zm0,1.992a3.9,3.9,0,0,1,3.887,3.968,3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,96.024,1.992ZM104.369.245l-.082.082,3.723,11.268.082.082h1.845l.082-.082,2.45-7.724,2.433,7.724.082.082h1.862l.082-.082L120.65.327l-.082-.082h-1.976l-.082.082L115.9,8.672,113.5.49l-.082-.082h-1.894L111.44.49l-2.4,8.182L106.426.327l-.082-.082Zm19.335,0-.082.082V11.595l.082.082h1.731l.082-.082V3.4l6.287,8.2.163.082H133.8l.082-.082V.327L133.8.245h-1.747l-.082.082v8.2L125.68.327l-.163-.082Z" transform="translate(1456.627 629.613) rotate(90)" fill="#fff" />
+                    <g class="Group_254" data-name="Group 254" transform="translate(1441.457 776.939)">
+                        <path class="Path_19" data-name="Path 19" d="M0,0V24.05" transform="translate(8.618 0)" fill="none" stroke="#fff" stroke-width="1.5" />
+                        <path class="Path_20" data-name="Path 20" d="M0,0H12.187V12.187" transform="translate(17.236 15.201) rotate(135)" fill="none" stroke="#fff" stroke-width="1.5" />
+                    </g>
+                </g>
+            </svg> </div>
+        <div class="left_center_do_not_use_section3"> <svg class="left_arrow_circle_down bounce" xmlns="http://www.w3.org/2000/svg" width="18.296" height="172.206" viewBox="0 0 18.296 172.206">
+                <g class="Group_291" data-name="Group 291" transform="translate(-1440.926 -629.613)">
+                    <path class="Path_3668" data-name="Path 3668" d="M4.981,2.825,6.434,1.747A3.471,3.471,0,0,0,3.429,0,3.03,3.03,0,0,0,.31,3.037c0,3.184,4.916,3.054,4.916,5.209A1.573,1.573,0,0,1,3.593,9.929c-.833,0-1.47-.457-1.927-1.535H1.5L0,9.488a3.683,3.683,0,0,0,3.593,2.433A3.7,3.7,0,0,0,7.349,8.247c0-3.756-4.916-3.707-4.916-5.209a.956.956,0,0,1,1-1.045,1.764,1.764,0,0,1,1.388.833Zm15.367.49V1.159A6.515,6.515,0,0,0,16.429,0a6.012,6.012,0,0,0-6.042,5.961,6.012,6.012,0,0,0,6.042,5.961,6.515,6.515,0,0,0,3.919-1.159V8.606l-.082-.082a5.874,5.874,0,0,1-3.838,1.4,3.914,3.914,0,0,1-3.887-3.968,3.914,3.914,0,0,1,3.887-3.968,5.874,5.874,0,0,1,3.838,1.4Zm3.87-3.07-.082.082V11.595l.082.082h1.731l.082-.082V6.908h1.208l3.511,4.687.082.082h2.237l.082-.082L29.33,6.418a3,3,0,0,0,1.829-2.842c0-1.878-1.47-3.331-3.838-3.331Zm1.813,1.911h1.29c1.061,0,1.682.506,1.682,1.421s-.621,1.437-1.682,1.437h-1.29ZM40.794,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,40.794,0Zm0,1.992A3.9,3.9,0,0,1,44.68,5.961a3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,40.794,1.992ZM50.462.245,50.4.31v11.3l.065.065h6.745l.065-.065V9.847l-.065-.082H52.291V.31L52.225.245Zm10.174,0L60.57.31v11.3l.065.065H67.38l.065-.065V9.847l-.065-.082H62.465V.31L62.4.245Zm16.347,0L76.9.327V11.595l.082.082H80.82a5.771,5.771,0,0,0,6.042-5.716A5.771,5.771,0,0,0,80.82.245ZM78.8,2.156H80.82a3.728,3.728,0,0,1,3.919,3.805A3.728,3.728,0,0,1,80.82,9.766H78.8ZM96.024,0a5.961,5.961,0,1,0,6.042,5.961A5.98,5.98,0,0,0,96.024,0Zm0,1.992a3.9,3.9,0,0,1,3.887,3.968,3.888,3.888,0,1,1-7.773,0A3.9,3.9,0,0,1,96.024,1.992ZM104.369.245l-.082.082,3.723,11.268.082.082h1.845l.082-.082,2.45-7.724,2.433,7.724.082.082h1.862l.082-.082L120.65.327l-.082-.082h-1.976l-.082.082L115.9,8.672,113.5.49l-.082-.082h-1.894L111.44.49l-2.4,8.182L106.426.327l-.082-.082Zm19.335,0-.082.082V11.595l.082.082h1.731l.082-.082V3.4l6.287,8.2.163.082H133.8l.082-.082V.327L133.8.245h-1.747l-.082.082v8.2L125.68.327l-.163-.082Z" transform="translate(1456.627 629.613) rotate(90)" fill="#fff" />
+                    <g class="Group_254" data-name="Group 254" transform="translate(1441.457 776.939)">
+                        <path class="Path_19" data-name="Path 19" d="M0,0V24.05" transform="translate(8.618 0)" fill="none" stroke="#fff" stroke-width="1.5" />
+                        <path class="Path_20" data-name="Path 20" d="M0,0H12.187V12.187" transform="translate(17.236 15.201) rotate(135)" fill="none" stroke="#fff" stroke-width="1.5" />
+                    </g>
+                </g>
+            </svg> </div>
+    </section>
+    <section id="contact-section">
+        <!-- Contact Form-->
+      <div class="container_form" id="contact_form" form method="post" action="subscriberform.php">
+            <h1 id="h1_form">Get in touch!</h1>
+            <div class="contact-fome" id="contact_form">
+                <div class="input-class"> <input type="text" class="input" placeholder="Your Name" required aria-required="true"> <input type="email" class="input" placeholder="Your E-mail" required aria-required="true"> <input type="tel" class="input" placeholder="Phone" required> <input type="text" class="input" placeholder="Subject"> </div>
+                <div class="msg"> <textarea placeholder="Message" cols="30" rows="10" required aria-required="true"></textarea> <button class="btn" type="submit">Send</button> </div>
+            </div>
+        </div>
+    </div>
+    <!-- Electro Canvas Animation / Contact Form-->
+    <div id="electro"> <canvas id="canvas"></canvas></div>
+    </section>
+    <!-- FOOTER SECTION-->
+    <footer>
+        <div class="container_footer">
+              <p class="p_footer" >This website portfolio took me 6,317 lines of code. &copy; 2023, Vlastimil Slechta;</p>
+        </div>
+    </footer>
+    <!--[if lt IE 9]-->
+    <script type="text/javascript" src="excanvas.js"></script>
+    <!--[endif]-->
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="jquery.tagcanvas.min.js"></script>
+</body>
+
+</html>
