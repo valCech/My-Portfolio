@@ -105,9 +105,9 @@ const myFunc = (navCondition) => {
 };
 
 //Page reload when screen size changes
-window.addEventListener('resize', function() {
-  window.location.reload();
-});
+//window.addEventListener('resize', function() {
+ // window.location.reload();
+//});
 
 
 
